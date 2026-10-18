@@ -51,16 +51,6 @@ institution = "Valley High Academy"
 title = "Outstanding Achievement in STEM"
 date = "May 2018"
 
-[[params.certifications]]
-title = "Azure AI Engineering Specialist"
-date = "Dec 2024"
-url = "https://example.com/cert-azure"
-
-[[params.certifications]]
-title = "Google Cloud ML Professional"
-date = "March 2024" 
-url = "https://example.com/cert-gcp"
-
 [[params.experience]]
 company = "Lorem Technologies"
 role = "AI Research Engineer"
