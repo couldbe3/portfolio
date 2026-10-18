@@ -55,7 +55,7 @@
             <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
                 <h2 class="text-4xl font-bold relative">{{ T "whatIWorkWith" }}</h2>
                 <button type="button" id="tech-motion-toggle" aria-pressed="false" aria-controls="tech-carousel"
-                    class="px-3 py-1.5 text-sm rounded-md border border-border-primary-light dark:border-border-primary-dark text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-400">
+                    class="px-3 py-1 text-sm rounded-md border border-border-primary-light dark:border-border-primary-dark text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark">
                     움직임 멈추기
                 </button>
             </div>
@@ -355,6 +355,12 @@
 .carousel-container:hover .carousel-track-reverse,
 .carousel-container:hover .carousel-track-left-to-right {
     animation-play-state: paused;
+}
+
+/* 멈춤 버튼: 키보드로 선택했을 때 테두리가 잘 보이게 */
+#tech-motion-toggle:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
 }
 
 /* 멈춤 버튼을 누르거나 키보드 초점이 들어오면 멈춤 */
