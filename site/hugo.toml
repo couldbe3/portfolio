@@ -59,6 +59,12 @@ role = "알고리즘과 자료구조 기초"
 period = "2026.09 ~ 진행 중"
 description = "순서도·의사코드로 알고리즘을 표현하는 법과 Big-O를 배우고, 정렬(버블·삽입·병합·퀵), 이진 탐색 트리, BFS·DFS, 다익스트라 알고리즘을 Python 코드로 한 줄씩 따라가며 공부했습니다."
 
+[[params.experience]]
+company = "웹프로그래밍기초"
+role = "HTML5·CSS 웹 기초"
+period = "2026.09 ~ 진행 중"
+description = "HTML 문서 구조와 웹 폼, CSS 기본 스타일을 배웠고, 이 사이트에 섹션 id와 앵커 링크를 직접 적용했습니다."
+
 [[params.projects]]
 title = "Project Consectetur"
 description = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
