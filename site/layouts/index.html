@@ -70,7 +70,7 @@
                         {{- end -}}
                         {{/* Duplicates */}}
                         {{- range .row1 -}}
-                            <div class="carousel-item">
+                            <div class="carousel-item" aria-hidden="true">
                                 <i class="{{ .icon }}"></i>
                                 <span class="text-xl">{{ .name }}</span>
                             </div>
@@ -88,7 +88,7 @@
                         {{- end -}}
                         {{/* Duplicates */}}
                         {{- range .row2 -}}
-                            <div class="carousel-item">
+                            <div class="carousel-item" aria-hidden="true">
                                 <i class="{{ .icon }}"></i>
                                 <span class="text-xl">{{ .name }}</span>
                             </div>
