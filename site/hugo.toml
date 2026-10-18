@@ -53,6 +53,12 @@ role = "Python으로 데이터 다루기"
 period = "2026.09 ~ 진행 중"
 description = "변수·조건문·반복문·함수 등 Python 기초를 배우고, pandas의 Series와 DataFrame으로 표 데이터를 만들고 정리했습니다. 수업에서 공공데이터(대학 등록금 통계)와 의료 이미지 데이터 전처리를 실습했습니다."
 
+[[params.experience]]
+company = "AI알고리즘의 이해"
+role = "알고리즘과 자료구조 기초"
+period = "2026.09 ~ 진행 중"
+description = "순서도·의사코드로 알고리즘을 표현하는 법과 Big-O를 배우고, 정렬(버블·삽입·병합·퀵), 이진 탐색 트리, BFS·DFS, 다익스트라 알고리즘을 Python 코드로 한 줄씩 따라가며 공부했습니다."
+
 [[params.projects]]
 title = "Project Consectetur"
 description = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
