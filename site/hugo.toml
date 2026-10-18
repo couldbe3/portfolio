@@ -47,6 +47,12 @@ role = "Git·GitHub와 웹 배포 실습"
 period = "2026.09 ~ 진행 중"
 description = "첫 저장소에서 commit·push와 브랜치를 연습하고, 팀 소개 페이지와 Movie Lab을 GitHub Pages로 배포했습니다. React와 Firebase로 로그인·데이터 저장이 되는 할 일 앱도 실습했습니다."
 
+[[params.experience]]
+company = "데이터과학기초"
+role = "Python으로 데이터 다루기"
+period = "2026.09 ~ 진행 중"
+description = "변수·조건문·반복문·함수 등 Python 기초를 배우고, pandas의 Series와 DataFrame으로 표 데이터를 만들고 정리했습니다. 수업에서 공공데이터(대학 등록금 통계)와 의료 이미지 데이터 전처리를 실습했습니다."
+
 [[params.projects]]
 title = "Project Consectetur"
 description = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
