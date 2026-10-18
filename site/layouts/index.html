@@ -49,7 +49,8 @@
     {{ end }}
 
     <!-- Tech Stack -->
-    {{ with (index hugo.Data .Language.Lang "tech") }}
+    {{ $techData := index hugo.Data .Language.Lang "tech" }}
+    {{ with (cond (and $techData $techData.row1) $techData site.Params.tech) }}
         <section class="mb-20">
             <h2 class="text-4xl font-bold mb-2 relative">{{ T "whatIWorkWith" }}</h2>
             <div class="tech-carousel">
