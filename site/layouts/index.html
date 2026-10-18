@@ -52,8 +52,14 @@
     {{ $techData := index hugo.Data .Language.Lang "tech" }}
     {{ with (cond (and $techData $techData.row1) $techData site.Params.tech) }}
         <section class="mb-20">
-            <h2 class="text-4xl font-bold mb-2 relative">{{ T "whatIWorkWith" }}</h2>
-            <div class="tech-carousel">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+                <h2 class="text-4xl font-bold relative">{{ T "whatIWorkWith" }}</h2>
+                <button type="button" id="tech-motion-toggle" aria-pressed="false" aria-controls="tech-carousel"
+                    class="px-3 py-1.5 text-sm rounded-md border border-border-primary-light dark:border-border-primary-dark text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-400">
+                    움직임 멈추기
+                </button>
+            </div>
+            <div class="tech-carousel" id="tech-carousel">
                 <div class="carousel-container">
                     <div class="carousel-track carousel-track-left-to-right">
                         {{- range .row1 -}}
@@ -351,6 +357,13 @@
     animation-play-state: paused;
 }
 
+/* 멈춤 버튼을 누르거나 키보드 초점이 들어오면 멈춤 */
+.tech-carousel.is-paused .carousel-track,
+.tech-carousel.is-paused .carousel-track-reverse,
+.tech-carousel.is-paused .carousel-track-left-to-right {
+    animation-play-state: paused;
+}
+
 /* 기기에서 "동작 줄이기"를 켠 사용자는 아이콘 줄이 움직이지 않게 */
 @media (prefers-reduced-motion: reduce) {
     .carousel-track,
@@ -483,6 +496,21 @@ html.dark .toaster {
     opacity: 1;
 }
 </style>
+
+<script>
+    // 기술 스택 움직임 멈추기/다시 움직이기 버튼 (마우스, 터치, 키보드 모두 사용 가능)
+    (function () {
+        const button = document.getElementById('tech-motion-toggle');
+        const carousel = document.getElementById('tech-carousel');
+        if (!button || !carousel) return;
+        button.addEventListener('click', function () {
+            const paused = carousel.classList.toggle('is-paused');
+            button.setAttribute('aria-pressed', paused ? 'true' : 'false');
+            button.textContent = paused ? '다시 움직이기' : '움직임 멈추기';
+        });
+    })();
+</script>
+
 
 <script>
 function copyToClipboard(text) {
