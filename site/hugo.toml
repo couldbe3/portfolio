@@ -78,6 +78,12 @@ date = "2026-10-18"
 summary = "Hugo 테마로 내 소개 사이트를 만들고 GitHub Actions로 자동 배포하기까지의 과정과 배운 점"
 link = "/blogs/portfolio-site-making/"
 
+[[params.blogs]]
+title = "관심 분야와 학습 목표"
+date = "2026-10-18"
+summary = "AI와 소프트웨어 엔지니어링에 관심을 갖게 된 이유와, 앞으로의 학습 목표와 실행 계획"
+link = "/blogs/interest-and-goal/"
+
 [menu]
   [[menu.main]]
     name = "About"
