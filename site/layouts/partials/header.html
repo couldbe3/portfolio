@@ -54,7 +54,7 @@
                 {{ $author := cond (and $authorData $authorData.author) $authorData.author site.Params }}
                 {{ $homePermalink := site.Home.Permalink }}
                 {{ with $author }}
-                <a href="{{ $homePermalink }}" class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors duration-300">
+                <a href="{{ $homePermalink }}" class="whitespace-nowrap text-xl font-bold text-text-primary-light dark:text-text-primary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors duration-300">
                     {{ .name }}
                 </a>
                 {{ end }}
@@ -72,7 +72,7 @@
                 {{ end }}
             </nav>
             <div class="hidden md:flex justify-end items-center">
-                <div class="flex items-center">
+                <div class="hidden lg:flex items-center">
                     <span class="text-lg text-text-secondary-light dark:text-text-secondary-dark mr-2">{{ T "localTimeLabel" }}</span>
                     <div id="local-time" class="text-lg text-text-secondary-light dark:text-text-secondary-dark"></div>
                 </div>
