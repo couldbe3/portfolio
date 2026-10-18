@@ -28,14 +28,11 @@ github_username = "couldbe3"
     { icon = "devicon-css3-plain", name = "CSS3" }
   ]
   row2 = [
-    { icon = "devicon-docker-plain", name = "Docker" },
-    { icon = "devicon-kubernetes-plain", name = "Kubernetes" },
-    { icon = "devicon-nginx-original", name = "Nginx" },
-    { icon = "devicon-postgresql-plain", name = "PostgreSQL" },
-    { icon = "devicon-redis-plain", name = "Redis" },
     { icon = "devicon-git-plain", name = "Git" },
+    { icon = "devicon-github-original", name = "GitHub" },
     { icon = "devicon-hugo-plain", name = "Hugo" },
-    { icon = "devicon-tailwindcss-plain", name = "TailwindCSS" }
+    { icon = "devicon-markdown-original", name = "Markdown" },
+    { icon = "devicon-vscode-plain", name = "VS Code" }
   ]
 
 [[params.experience]]
