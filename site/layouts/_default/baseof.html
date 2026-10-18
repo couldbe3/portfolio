@@ -70,6 +70,10 @@
                 float: left;
             }
         </style>
+        <style>
+            /* 글 안의 코드 표시에 백틱(`) 기호가 그대로 보이지 않게 */
+            .prose code::before, .prose code::after { content: none !important; }
+        </style>
     </head>
     <body class="min-h-screen bg-bg-primary-light dark:bg-bg-primary-dark text-text-primary-light dark:text-text-primary-dark">
         {{ partial "header" . }}
