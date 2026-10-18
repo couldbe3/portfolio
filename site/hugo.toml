@@ -15,7 +15,7 @@ canonifyURLs = true
 [params]
 name = "JANG SUHUI"
 location = "South Korea"
-description = "AI Developer. ML Engineer. I finetune models, build scalable pipelines and automate workflows."
+description = "공공인재학과 2학년 JANG SUHUI입니다. Python으로 데이터를 정리해 보면서, 화면을 꾸미는 것보다 데이터를 다루는 과정이 더 재미있다는 걸 알게 되었습니다. 그 뒤로 AI와 소프트웨어 엔지니어링에 관심이 생겨 공부하고 있습니다."
 github = "https://github.com/couldbe3"
 github_username = "couldbe3"
 
